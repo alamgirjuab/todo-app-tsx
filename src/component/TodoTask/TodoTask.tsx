@@ -6,8 +6,8 @@ import './TodoTask.css';
 //     task?: string;
 // }
 interface Props {
-    task?: ITask;
-    completeTask(taskNameToDelete: string): void;
+    task: ITask;
+    completeTask(taskNameToDelete: String): void;
 }
 const TodoTask = ({ task, completeTask }: Props) => {
     return (
@@ -19,7 +19,9 @@ const TodoTask = ({ task, completeTask }: Props) => {
                 {task?.deadline}
             </span>
             <span>
-                <button onClick={() => { completeTask(task?.taskName) }} className="todo-btn">X</button>
+                <button onClick={() => {
+                    completeTask(task?.taskName)
+                }} className="todo-btn">X</button>
             </span>
         </div>
     )
