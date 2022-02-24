@@ -22,12 +22,12 @@ margin-bottom: 10px;
     border: 2px solid brown;
 }
 
-button{
+.button-style{
 background-color: lightgreen;
 font-weight: 700;
 }
 
-button:hover{
+.button-style:hover{
 background-color: lightsalmon;
 color: white;
 }
